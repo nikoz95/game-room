@@ -1,0 +1,23 @@
+<div class="container computerContainer" [ngStyle]="computerType==='vip'?{'background':'#FF3800'}:{'background':'#F0EDBB'}">
+  <div class="topContainer">
+    <span data-title="ფასი: 2₾"><i class="fas fa-award"></i></span>
+    <span class="containerTitle">{{computerName}}#{{computerID}} </span>
+  </div>
+  <div class="centerContainer">
+    <div class="selectBoxes" *ngIf="computerState==='free'">
+      <div class="selectBox">
+        <app-select-box primaryColor=#77A6F6 [othVal]=time [selVal]=0 height=50 width=90 (selectedItem)="setSettings('time', $event)"></app-select-box>
+      </div>
+      <div class="selectBox">
+        <app-select-box [othVal]=controllers [selVal]=0 height=50 width=90 (selectedItem)="setSettings('controller', $event)"></app-select-box>
+      </div>
+    </div>
+    <div class="timerContainer" *ngIf="computerState==='busy'">
+      <app-timer minTime=10 [time]=currentTime [maxTime]=maxTime timerActive=true [fixedTime]="fixedTime"></app-timer>
+      <span>ჯამური თანხა: 5₾</span>
+    </div>
+  </div>
+  <div class="btmContainer">
+    <app-button class="customBtn" value="დაწყება" width=100 height=35 (click)="startTime()"></app-button>
+  </div>
+</div>

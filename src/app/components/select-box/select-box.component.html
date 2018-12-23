@@ -1,0 +1,12 @@
+<div class="dropdown" #dropdownMain>
+  <div (click)="toggleMenu()">
+    <span>{{ otherValues[selectedValue].name }}</span>
+    <span class="arrow" *ngIf="!dropdown">▼</span>
+    <span class="arrow" *ngIf="dropdown">▲</span>
+  </div>
+  <ul class="dropdown-content" *ngIf="showDropdown">
+    <li *ngFor="let item of otherValues; let i=index" (click)="selectItem(i)">
+      {{item.name}}
+    </li>
+  </ul>
+</div>

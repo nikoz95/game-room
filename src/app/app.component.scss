@@ -1,0 +1,73 @@
+@media (max-width: 992px) {   
+  
+    ::ng-deep .right-panel {
+     
+      margin-left: 83px!important;
+      width: fit-content;
+    }
+    ::ng-deep body {     
+      
+      width: fit-content;
+    }
+    ::ng-deep .content {
+      width: fit-content;
+      
+    }
+    ::ng-deep .header {
+      width: fit-content;
+    }
+    ::ng-deep table {
+      display: none;
+    }
+    ::ng-deep aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu{
+      display: none!important;
+
+    }
+    ::ng-deep aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu.show{
+      display: block!important;
+
+    }
+    
+    ::ng-deep aside.left-panel[_ngcontent-c1] {
+      background: transparent!important;
+      box-shadow: transparent!important;
+      
+  }
+  
+  ::ng-deep aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu.show{
+      width: 83px!important;
+
+    }
+    ::ng-deep .left-panel{
+      max-width: none!important;
+      z-index: 1!important;
+      background: transparent!important;
+      box-shadow: none!important;
+      width: 83px!important;
+  }
+  ::ng-deep .left-panel.override-panel {
+    width: 280px!important;
+  }
+  ::ng-deep ul.nav.navbar-nav {
+      max-width: 83px!important;
+  }
+  
+  .navbar[_ngcontent-c3] .navbar-nav[_ngcontent-c3] li.menu-item-has-children.show[_ngcontent-c3] .sub-menu[_ngcontent-c3]{
+      left: 83px;
+      z-index: 1!important;
+  } 
+  ::ng-deep .navbar[_ngcontent-c3] .navbar-nav[_ngcontent-c3] li[_ngcontent-c3] {
+      padding-left: 0!important;
+      padding-right: 30px;
+      width: 100%;
+  }
+  ::ng-deep .navbar[_ngcontent-c3] .navbar-nav[_ngcontent-c3] li.menu-item-has-children.show[_ngcontent-c3] a[_ngcontent-c3]:before {
+    border:none;
+  }
+  ::ng-deep .fa.fa-bars{
+    display: none;
+  }
+  ::ng-deep .img_edit{
+    width: 15%!important;
+  }
+}

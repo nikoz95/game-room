@@ -1,0 +1,50 @@
+<div class="sufee-login d-flex align-content-center flex-wrap">
+  <div class="container">
+    <div class="login-content">
+      <div class="login-logo">
+        <a href="#">
+          <img class="align-content" src="images/logo.png" alt="">
+        </a>
+      </div>
+      <div class="login-form" *ngIf="pageType === 'login'">
+        <form>
+          <div class="form-group">
+            <label>სახელი</label>
+            <input type="email" class="form-control" placeholder="სახელი">
+          </div>
+          <div class="form-group">
+            <label>გვარი</label>
+            <input type="email" class="form-control" placeholder="გვარი">
+          </div>
+          <div class="form-group">
+            <label>პაროლი</label>
+            <input type="password" class="form-control" placeholder="პაროლი">
+          </div>
+
+          <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">შესვლა</button>
+
+        </form>
+      </div>
+
+      <div class="login-form" *ngIf="pageType === 'register'">
+        <form>
+          <div class="form-group">
+            <label>სახელი</label>
+            <input type="email" class="form-control" placeholder="სახელი">
+          </div>
+          <div class="form-group">
+            <label>გვარი</label>
+            <input type="email" class="form-control" placeholder="გვარი">
+          </div>
+          <div class="form-group">
+            <label>პაროლი</label>
+            <input type="password" class="form-control" placeholder="პაროლი">
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">რეგისტრაცია</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="box-title"> {{ title }} </h4>
+  </div>
+  <div class="card-body--">
+    <div class="table-stats order-table ov-h">
+      <table class="table ">
+        <thead>
+          <tr>
+            <th class="serial">#</th>
+            <th class="avatar">Avatar</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data; let index=index">
+            <td class="serial">{{index+1}}</td>
+            <td class="avatar">
+              <div class="round-img">
+                <a href="#"><img class="rounded-circle" src="../../../assets/avatar/1.jpg" alt=""></a>
+              </div>
+            </td>
+            <td> #{{item.id}} </td>
+            <td> <span class="name">{{item.name}}</span> </td>
+            <td> <span class="product">{{item.product}}</span> </td>
+            <td><span class="count">{{item.quantity}}</span></td>
+            <td>
+              <span class="badge badge-complete" [ngClass]="{'badge-complete': item.status=== 'complete',
+              'badge-pending': item.status=== 'pending'}">{{item.status}}</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

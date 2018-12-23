@@ -1,0 +1,110 @@
+.card{
+    margin-bottom: 1.875em;
+    border-radius: 5px;
+    padding: 0;
+    border: 0px solid transparent;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08); 
+
+    .card-body{
+        float: left;
+        padding: 1.25em;
+        position: relative;
+        width: 100%;
+
+        .box-title{
+            font-weight: 600;
+            font-size: 1em;
+            padding: 5px 0;
+        }
+    }
+
+    .table-stats{
+        table{
+            font-family: 'Open Sans';
+
+            th{
+                border: none;
+                border-bottom: 1px solid #e8e9ef;
+                color: #868e96;
+                font-size: 12px;
+                font-weight: normal;
+                padding: .75em 1.25em;
+                text-transform: uppercase;
+                img{
+                    margin-right: 10px;
+                    max-width: 45px;
+                }
+                .name{
+                    color: #343a40;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                }
+            }
+            td{
+                border: none;
+                border-bottom: 1px solid #e8e9ef;
+                color: #868e96;
+                font-size: 12px;
+                font-weight: normal;
+                padding: .75em 1.25em;
+                text-transform: uppercase;
+                color: #343a40;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: capitalize;
+                vertical-align: middle;
+                img{
+                    margin-right: 10px;
+                    max-width: 45px;
+                }
+                .name{
+                    color: #343a40;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
+    .order-table{
+        position: relative;
+
+        &:after, &:before{
+            content: "";
+            position: absolute;
+            top: 0px;
+            height: 37px;
+            width: 10px;
+            background: #e8e9ef;
+            right: -1px;
+        }
+        tr{
+            th{
+                background: #e8e9ef;
+                &:last-child{
+                    background: #e8e9ef;
+                    text-align: center;
+                }
+            }
+            td{
+                &:last-child{
+                    text-align: center;
+                }
+            }
+        }
+
+        .badge{
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+            font-weight: normal;    
+        }
+        .badge-complete{
+            background: #00c292;
+        }
+        .badge-pending{
+            background: #fb9678;
+        }
+    }
+}

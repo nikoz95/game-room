@@ -1,0 +1,55 @@
+@import '../../../scss/color-clases.scss';
+
+.card{
+    margin-bottom: 1.875em;
+    border-radius: 5px;
+    padding: 0;
+    border: 0px solid transparent;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08); 
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+
+    .card-body{
+        float: left;
+        padding: 1.25em;
+        position: relative;
+        width: 100%;
+        .stat-widget-five{
+            min-height: 60px;
+            .stat-icon{
+                font-size: 50px;
+                line-height: 50px;
+                position: absolute;
+                left: 30px;
+                top: 20px;
+            }
+            .dib{
+                display: inline-block;
+            }
+            .stat-content{
+                margin-left: 100px;
+                .text-left{
+                    .stat-text{
+                        color: #455a64;
+                        font-size: 20px;
+                        .count{}
+                    }
+                }
+                .stat-heading{
+                    color: #99abb4;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

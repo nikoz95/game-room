@@ -1,0 +1,51 @@
+.sufee-login{
+    height: 100vh;
+    background: #343a40;
+}
+.login-content{
+    max-width: 540px;
+    margin: 8vh auto;
+    .login-logo{
+        text-align: center;
+        margin-bottom: 15px;
+        span{
+            color: #ffffff;
+            font-size: 24px;
+        }
+    }
+    .login-form {
+        background: #ffffff;
+        padding: 30px 30px 20px;
+        border-radius: 2px; 
+
+        h4{
+            color: #878787;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .checkbox{
+            color: #878787;
+
+            label{
+                text-transform: none;
+            }
+        }
+
+        .btn{
+            width: 100%;
+            text-transform: uppercase;
+            font-size: 14px;
+            padding: 15px;
+            border: 0px;
+        }
+
+        label{
+            color: #878787;
+            text-transform: uppercase;
+            a {
+                color: #ff2e44; 
+            }
+        }
+    }
+}

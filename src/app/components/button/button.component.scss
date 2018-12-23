@@ -1,0 +1,13 @@
+.btn{
+    width: 150px;
+    background: blueviolet;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    &:hover{
+        cursor: pointer;
+    }
+}

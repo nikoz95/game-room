@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-sm navbar-default">
+  <div id="main-menu" class="main-menu collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+
+      <li class="active">
+        <a href="index.html"><i class="menu-icon fa fa-home"></i> მთავარი </a>
+      </li>
+
+      <li class="menu-title"> ზოგადი </li>
+
+      <li class="menu-item-has-children dropdown">
+        <a href="#" class="dropdown-toggle" (click)="toggleClass()" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <i class="menu-icon fa fa-gamepad"></i>
+          კომპიუტერები </a>
+        <ul class="sub-menu children dropdown-menu">
+          <li><i class="fa fa-puzzle-piece"></i><a (click)="data.changeState('consoleList')"> კომპიუტერები </a></li>
+          <li><i class="fa fa-id-badge"></i><a (click)="data.changeState('addconsole')"> დამატება </a></li>
+          <li><i class="fa fa-bars"></i><a (click)="data.changeState('consoleEdit')"> რედაქტირება </a></li>
+        </ul>
+      </li>
+
+      <li class="menu-item-has-children dropdown">
+        <a href="#" class="dropdown-toggle" (click)="toggleClass()" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <i class="menu-icon fa fa-trophy"></i>
+          აქციები </a>
+        <ul class="sub-menu children dropdown-menu">
+          <li><i class="fa fa-table"></i><a (click)="data.changeState('promoList')"> მიმდინარე </a></li>
+          <li><i class="fa fa-table"></i><a (click)="data.changeState('addpromo')"> დამატება </a></li>
+          <li><i class="fa fa-table"></i><a (click)="data.changeState('promoEdit')"> რედაქტირება </a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children dropdown">
+        <a href="#" class="dropdown-toggle" (click)="toggleClass()" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <i class="menu-icon fa fa-shopping-cart"></i>
+          მაღაზია </a>
+        <ul class="sub-menu children dropdown-menu">
+          <li><i class="menu-icon fa fa-th"></i><a (click)="data.changeState('productList')"> პროდუქტები </a></li>
+          <li><i class="menu-icon fa fa-th"></i><a (click)="data.changeState('addProduct')"> დამატება </a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children dropdown">
+        <a href="#" class="dropdown-toggle" (click)="toggleClass()" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <i class="menu-icon fa fa-users"></i>
+          თანამშრომლები </a>
+        <ul class="sub-menu children dropdown-menu">
+          <li><i class="menu-icon fa fa-th"></i><a (click)="data.changeState('employeeList')"> სია </a></li>
+          <li><i class="menu-icon fa fa-th"></i><a (click)="data.changeState('addEmployee')"> დამატება </a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

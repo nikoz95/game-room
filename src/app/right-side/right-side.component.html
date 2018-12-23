@@ -1,0 +1,22 @@
+<div id="right-panel" class="right-panel">
+  <app-header></app-header>
+
+  <app-content [appData]="data"  *ngIf="state === 'home'"></app-content>
+  <app-productlist  *ngIf="state === 'productList'"></app-productlist>
+  <app-employerlist *ngIf="state === 'employeeList'"></app-employerlist>
+  <app-register-employe *ngIf="state === 'addEmployee'"></app-register-employe>
+  <app-register-product *ngIf="state === 'addProduct'"></app-register-product>
+  <app-register-promo *ngIf="state === 'addpromo'"></app-register-promo>
+  <app-promolist *ngIf="state === 'promoList'"></app-promolist>
+  <app-edit-promo *ngIf="state === 'promoEdit'"></app-edit-promo>
+
+  <app-consolelist *ngIf="state === 'consoleList'"></app-consolelist>
+  <app-register-console *ngIf="state === 'addconsole'"></app-register-console>
+  <app-edit-console *ngIf="state === 'consoleEdit'"></app-edit-console>
+
+
+
+  <div class="clearfix"></div>
+
+  <app-footer></app-footer>
+</div>

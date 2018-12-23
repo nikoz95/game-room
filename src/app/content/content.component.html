@@ -1,0 +1,33 @@
+<div class="content">
+  <div class="animated fadeIn">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <app-white-widget [widgetIcon]="iconList[0]" [widgetColor]="iconColors[0]" [widgetCurrency]="currency"
+          [widgetTitle]="titleList[0]" [widgetValue]="valueList[0]"></app-white-widget>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <app-white-widget [widgetIcon]="iconList[1]" [widgetColor]="iconColors[1]" [widgetCurrency]="currency"
+          [widgetTitle]="titleList[1]" [widgetValue]="valueList[1]"></app-white-widget>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <app-white-widget [widgetIcon]="iconList[2]" [widgetColor]="iconColors[2]" [widgetCurrency]="currency"
+          [widgetTitle]="titleList[2]" [widgetValue]="valueList[2]"></app-white-widget>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <app-white-widget [widgetIcon]="iconList[3]" [widgetColor]="iconColors[3]" [widgetCurrency]="currency"
+          [widgetTitle]="titleList[3]" [widgetValue]="valueList[3]"></app-white-widget>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let computer of computers">
+        <app-single-computer [data]="data" [name]="computer.name" [id]="computer.id" [state]="computer.state" [type]="computer.type"
+          [currentTime]="computer.currentTime" [maxTime]="computer.maxTime" [fixedTime]="computer.fixedTime" (start)="startTime(computer, $event)"></app-single-computer>
+      </div>
+    </div>
+  </div>
+</div>

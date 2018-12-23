@@ -1,0 +1,96 @@
+.card{
+    margin-bottom: 1.875em;
+    border-radius: 5px;
+    padding: 0;
+    border: 0px solid transparent;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08); 
+
+    .card-body{
+        float: left;
+        padding: 1.25em;
+        position: relative;
+        width: 100%;
+
+        .box-title{
+            font-weight: 600;
+            font-size: 1em;
+            padding: 5px 0;
+        }
+        .calender-cont {
+            position: relative;
+            padding-top: 20px;
+            .fc-title {
+                color: #fff;
+            }
+            .fc-center {
+                position: absolute;
+                top: 0;
+                left: 0;
+                h2{
+                   font-size: 16px;
+                   font-weight: 700; 
+                } 
+            }
+            td {
+                .fc-event{
+                    border: 0px solid transparent;
+                    padding: 1px;
+                } 
+                .fc-time {
+                    color: white;    
+                    font-weight: 400;
+                    font-size: 11px;
+                    padding: 2px;
+                }
+            }
+            .fc-left {
+                .fc-button-group {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    button {
+                        height: 20px;
+                        width: 20px;
+                        line-height: 18px;
+                        padding: 0;
+                        border: 0px solid transparent;
+                        background: #eceff1;
+                        color: #889196;
+                        &.fc-prev-button {
+                            margin-right: 4px;
+                        }
+                        .fc-icon {
+                            font-size: 11px;
+                        } 
+                        &:hover {
+                            background: #d8d8d8;
+                        }
+                    }
+                }
+        
+            }
+            &.widget-calender {
+                padding-top: 20px;
+                td, th {
+                    font-size: 14px;
+                    border: 0px solid transparent;
+                }
+                .fc-right {
+                    display: none;
+                }
+                .fc-today-button {
+                    display: none;
+                }  
+                .fc-widget-content {
+                    height: 45px!important;
+                    min-height: 45px!important;
+                }
+                .fc-day-grid-container {
+                    max-height: 250px!important;
+                    overflow: hidden!important;
+                }
+            } 
+        }
+    }
+}

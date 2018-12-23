@@ -1,0 +1,33 @@
+aside{
+    &.left-panel{
+        background: #fff;
+        height: 100vh;
+        padding: 0;
+        vertical-align: top;
+        width: 280px;
+        -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+                box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 55px;
+        z-index: 999;
+
+        &:hover{
+            overflow-x: scroll;
+        }
+    }
+}
+
+.open{
+    aside{
+        &.left-panel{
+            max-width: 83px;
+            width: 83px;
+            &:hover{
+                overflow-x: inherit;
+            }
+        }
+    }
+}
+
